@@ -1,18 +1,31 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+body {
+    font-family: 'Montserrat', serif;
+    color: #2e2f42;
+    background-color: #ffffff;
+    padding: 36px 156px;
+    width: 1440px;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+a {
+    text-decoration: none;
+    color: currentColor;
+    font-size: 24px;
+    transition: color 250ms ease-in-out;
+}
+
+a:hover,
+a:focus {
+    color: #808080;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
