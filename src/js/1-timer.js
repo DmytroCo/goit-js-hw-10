@@ -55,7 +55,7 @@ const options = {
 input.addEventListener('input', flatpickr('#datetime-picker', options));
 button.addEventListener('click', startCount);
 
-function converTime(ms) {
+function convertMs(ms) {
 
   const second = 1000;
   const minute = second * 60;
@@ -79,7 +79,7 @@ function startCount() {
   const targetDate = new Date(input.value);
   const timeInterval = targetDate - currentDate;
 
-    const { days, hours, minutes, seconds } = converTime(timeInterval);
+    const { days, hours, minutes, seconds } = convertMs(timeInterval);
 
     if (timeInterval <= 0) {
       input.removeAttribute('disabled');
